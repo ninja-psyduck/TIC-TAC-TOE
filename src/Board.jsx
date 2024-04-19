@@ -7,10 +7,9 @@ function Board({xIsNext, squares, onPlay}) {
 
   function handleClick(i) {
     if (calculateWinner(squares) || squares[i]) {
-      //如果格子是非空，不返回任何值
       return;
     }
-    const nextSquares = squares.slice(); //不改变原数组,状态不可变
+    const nextSquares = squares.slice();
     if (xIsNext) {
       nextSquares[i] = "X";
     } else {
@@ -71,7 +70,7 @@ function calculateWinner(squares) {
   }
   return null;
 }
-
+//判断游戏是否已经结束或者某个方块已经被点击过
 //Array(9).fill(null) 创建一个包含 9 个元素的数组，
 //并将每个元素设置为 null 。
 // JavaScript 闭包

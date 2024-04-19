@@ -51,4 +51,5 @@ export default Game;
 //history 状态变量保存游戏历史
 //"lifted state up" from Square to Board
 //"lifted state up" from Board to Game
+//[Array(9).fill(null)]创建一个长度为9的数组
 //状态提升是一种常见的 React 优化技术，可以避免代码重复，提高代码可维护性和性能。在决定是否进行状态提升时，需要考虑具体情况。
